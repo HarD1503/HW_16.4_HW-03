@@ -1,0 +1,28 @@
+2024-12-17 20:16:03,016 INFO autoreload Watching for file changes with StatReloader
+2024-12-17 20:16:38,197 INFO basehttp "GET /articles/create/ HTTP/1.1" 200 3869
+2024-12-17 20:17:48,511 INFO basehttp "GET / HTTP/1.1" 200 10649
+2024-12-17 20:17:50,407 ERROR log Internal Server Error: /categories/2
+Traceback (most recent call last):
+  File "C:\Users\HarD\PycharmProjects\NewsPortal\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HarD\PycharmProjects\NewsPortal\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\HarD\PycharmProjects\NewsPortal\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HarD\PycharmProjects\NewsPortal\.venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HarD\PycharmProjects\NewsPortal\.venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HarD\PycharmProjects\NewsPortal\.venv\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: category_list1.html, news/post_list.html
+2024-12-17 20:17:51,413 ERROR basehttp "GET /categories/2 HTTP/1.1" 500 145
+2024-12-17 20:19:35,428 INFO autoreload C:\Users\HarD\PycharmProjects\NewsPortal_D16\NewsPortal\news\views.py changed, reloading.
+2024-12-17 20:19:36,194 INFO autoreload Watching for file changes with StatReloader
+2024-12-17 20:19:42,255 INFO basehttp "GET /58/ HTTP/1.1" 200 3677
+2024-12-17 20:20:03,114 INFO basehttp "GET /categories/4 HTTP/1.1" 200 22827
